@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+   .calculator {
+     width: 200px;
+     padding: 20px;
+     border: 10px solid #31958d;
+     border-radius: 20px;
+     background-color: #06bdae;
+    }
+    .calculator input {
+      width: 65%;
+      margin-bottom: 2px;
+    }
+    .calculator button {
+      width: 20%;
+      padding: 5px;
+      margin: 2px;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2> Cihan Arslan Hesap Makinesi</h2>
+ <div class="calculator">
+    <br>
+  <button onclick="clearResult()">C</button>
+  <input type="text" id="result" readonly>
+  
+
+
+  <br>
+  <button onclick="appendValue(7)">7</button>
+  <button onclick="appendValue(8)">8</button>
+  <button onclick="appendValue(9)">9</button>
+  <button onclick="appendValue('/')">/</button>
+  
+  <br>
+  <button onclick="appendValue(4)">4</button>
+  <button onclick="appendValue(5)">5</button>
+  <button onclick="appendValue(6)">6</button>
+  <button onclick="appendValue('*')">x</button>
+  
+  
+  <br>
+  <button onclick="appendValue(1)">1</button>
+  <button onclick="appendValue(2)">2</button>
+  <button onclick="appendValue(3)">3</button>
+  <button onclick="appendValue('+')">+</button>
+  
+  <br>
+  <button onclick="appendValue(0)">0</button>
+  <button onclick="appendValue('.')">.</button>
+  <button onclick="calculate()">=</button>
+  <button onclick="appendValue('-')">-</button>
+  
+  
+ </div>
+ 
